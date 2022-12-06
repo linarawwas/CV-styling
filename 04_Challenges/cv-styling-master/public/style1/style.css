@@ -1,0 +1,270 @@
+
+header div {
+    display: flex;
+    flex-direction: row;
+    color: rgb(255, 0, 0);
+    background-color: rgb(138, 132, 132);
+}
+
+header >div >hgroup{
+    margin: 40px;
+    margin-left: 90px;
+} 
+.experience-type ,.experience-date-separator, .experience-institution{
+    color:red;
+}
+.experience-type ,.experience-date-separator{
+    font-weight: bold;
+}
+.content{
+    display:grid;
+    grid-template-areas:
+    "about competencies"
+    "experiences education"
+    "hobbies .";
+grid-template-rows: auto;
+}
+ section>h3::before{
+content: ' ';
+background-color: red;
+border-radius: 50%;
+display: inline-block;
+padding: 10px;
+margin-right: 5px;
+ }
+section>h3{
+border-bottom: 1px solid rgb(176, 174, 174);
+padding-bottom: 10px;
+}
+#about{
+    grid-area: about;
+    margin-left: 60px;
+}
+#competencies{
+    grid-area: competencies;
+}
+.experience-date{
+    color: gray;
+}
+.experience-location{
+    color: gray;
+}
+#experiences{
+    grid-area: experiences;
+    margin-left: 60px;
+
+}
+#hobbies{
+    grid-area: hobbies;
+}
+#education{
+    grid-area: education;
+}
+#about,
+#competencies,
+#experiences,
+#education,
+#hobbies,
+#contact {
+    width: 94%;
+    margin-top: 30px;
+}
+.experience-details {
+    color: #999999;
+}
+
+.skill   {
+    /* border: 2px solid white; */
+    padding:1%;
+margin: 1%;
+    width: 100%;
+    height: 100%;
+background-color: #cccccc;
+  }
+ .skills-primary>[data-skill="5"] >span{
+    width:50%;
+    background-color: red;
+    display: block;
+    height: 100%;
+    padding: 1%;
+    color: white;
+ }
+.skills-primary::before{
+    content: 'Main';
+    margin-left: 3px;
+    font-weight: bolder;
+ }
+ .skills-secondary::before{
+    content: 'Other';
+    margin-left: 3px;
+    font-weight: bolder;
+ }
+[data-skill="3"] >span{
+    width: 30%;
+    color: white;
+    background-color: red;
+    display: block;
+    height: 100%;
+    padding: 1%;
+    padding: 1%;
+}
+
+[data-skill="1"] >span{
+    width: 10%;
+    color: white;
+
+    background-color: red;
+    display: block;
+    height: 100%;
+    padding: 1%;
+    
+}
+
+[data-skill="9"] >span{
+    width: 90%;
+    color: white;
+
+    background-color: red;
+    display: block;
+    height: 100%;
+    padding: 1%;
+}
+.skills-secondary>[data-skill="5"] >span{
+    width:50%;
+    color: white;
+    background-color: red;
+    display: block;
+    height: 100%;
+    padding: 1%;
+    
+}
+
+[data-skill="7"]>span {
+    width: 70%;
+    color: white;
+    padding: 1%;
+    background-color: red;
+    display: block;
+    height: 100%;
+}
+.contact{
+         display: grid;
+
+grid-template-areas:
+"contact-type contact-value"
+"contact-type contact-value"
+"contact-type contact-value"
+"contact-type contact-value"     
+"contact-type contact-value";
+grid-template-columns: 15rem;
+margin-right:0;
+} 
+.contact-type {
+         color: white;
+        background-color: red; 
+        width: 65%;
+        height: 25px;     
+        grid-area:contact-type;
+        margin-right:0;
+        padding-right: 0;
+      } 
+      .contact-value{
+grid-area:contact-value;
+color: red;
+text-decoration: none;
+padding-left:0;
+margin-left:-3.4rem;
+      }
+      .contact-value a{
+        color: red;
+      }
+      
+    dl.contact{          
+        text-decoration: none;
+        margin:0;
+        
+     }
+     
+     .contacts {     
+        background-color: black;     
+        position: absolute;
+        top: 13px;     
+        right: 112px;     
+        width: 42%;  
+        margin:0;
+    }
+#contact h3{
+    display: none;
+}
+.experience-institution::before{
+    content: '@';
+    display: inline-block;
+    margin:3px;
+}
+
+body{
+    margin: auto;
+    width: 80%;
+}
+p{
+    width: 80%;
+}
+@media only screen and (max-width: 890px)  {
+    .content{
+    display:flex;
+    flex-direction: column;
+    }
+    #about{
+        order:1;
+        margin-left:0;
+    }
+    #competencies{
+    order:2;   
+    }
+    #experiences{
+        order:3;
+        margin-left:0;
+
+    }
+    #education{
+    order:4;    
+    }
+    #hobbies{
+    order:5;    
+    }
+    #contact{
+    order:6;
+    }
+    .contacts {     
+    background-color: white;
+    position:static;
+    }
+    #contact h3{
+        display:inline-block;
+    }
+    section>h3::before{
+        content: ' ';
+        background-color: red;
+        border-radius: 50%;
+        display: inline-block;
+        padding: 10px;
+        margin-right: 5px;
+         }
+        section>h3{
+        border-bottom: 1px solid rgb(176, 174, 174);
+        padding-bottom: 10px;
+        }
+        .contact{
+            display: grid;
+   
+   grid-template-areas:
+   "contact-type contact-value"
+   "contact-type contact-value"
+   "contact-type contact-value"
+   "contact-type contact-value"     
+   "contact-type contact-value";
+   grid-template-columns: 11rem 10rem;
+   margin:0;
+   padding-right:0;
+   } 
+}
