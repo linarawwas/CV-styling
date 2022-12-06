@@ -1,0 +1,121 @@
+/* i tried to use css entities by refering
+to \2606 to add a white star to the 
+data skill but it didn't show on my browser
+maybe becauase of no support to the character on my screan,
+ i still didn't figure out the issue. */
+ body {
+    width: 60%;
+    margin: 0 auto;
+ }
+ header div{
+      padding-top:5%;
+
+ }
+ body header div hgroup h2 {
+   display:none;
+ }
+ body header div hgroup h1 {
+   border-bottom: 1px solid rgb(176, 174, 174);
+   padding-bottom: 10px; }
+header div figure img{
+position:absolute;
+transform: rotate(-15deg);
+top:10%;
+right:15%;
+width: 17%;  
+height: auto;  
+
+}
+#about h3{
+   display:none;
+}
+#about p{
+font-size:12px;
+width:70%;
+color:rgb(125, 121, 121);
+margin-bottom: 5rem;
+}
+body .content #competencies .skills-primary, body .content #competencies .skills-secondary{
+   display:flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   margin-right:20%;
+}
+.skills-primary .skill  span{
+display:inline-block;
+background-color: rgb(58, 151, 151);
+color:white;
+margin: 0.1rem 0 0 0.3rem;
+width:5rem;
+height:1em;
+padding: 0.2rem 1.3em 0.1rem 0.54rem;
+}
+.skills-secondary .skill  span{
+   font-size: 70%;
+   display:inline-block;
+   background-color: rgb(58, 151, 151);
+   color:white;
+   margin: 0.1rem 0 0 0.3rem;
+   width:4rem;
+   height:1em;
+   padding: 0.4em 3em 0.4em 1em;
+
+}
+body .content #competencies .skills-primary{
+   border-left: 1px solid rgb(15, 15, 15);
+
+}
+
+.skills-secondary::before{
+   content: "Competencies ";
+font-weight: bold;
+font-size: large;
+float:left;
+color:white;
+border-right: 1px solid rgb(15, 15, 15);
+margin-bottom:5rem;
+
+}
+body .content #competencies .skills-secondary{
+   display:flex;
+   flex-direction: row;
+   justify-content: flex-start;
+}
+#competencies h3{
+   display:none;
+}
+#competencies::before{
+content: "Competencies ";
+font-weight: bold;
+font-size: large;
+float:left;
+}
+.experience-institution{
+   display: none;
+}
+.experience-type{
+   color: rgb(58, 151, 151);
+}
+.experience-details{
+   float:right;
+   margin-top:-35px;
+   color: rgb(157, 143, 143);
+}
+.experience-date-separator{
+   color: rgb(58, 151, 151);
+font-weight: bold;
+}
+/* #experiences::before{
+   content: "Experiences ";
+   font-weight: bold;
+   font-size: large;
+   } */
+#experiences{
+border-left:1px solid rgb(15, 15, 15);
+
+display:flex;
+flex-direction: column;
+justify-content: flex-start;
+margin-left:4rem;
+padding:1rem;
+}
