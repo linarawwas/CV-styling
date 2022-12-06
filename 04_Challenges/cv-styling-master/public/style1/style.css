@@ -238,6 +238,7 @@ p{
     .contacts {     
     background-color: white;
     position:static;
+    margin-bottom: 5rem;;
     }
     #contact h3{
         display:inline-block;
@@ -267,4 +268,21 @@ p{
    margin:0;
    padding-right:0;
    } 
+   
+   header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(255, 0, 0);
+margin:0;
+padding: auto 2rem auto 2rem;}
+header >div >hgroup{
+    padding-left:2rem;
+    margin: 0px;
+    margin-left: 0px;
+} 
+header >div >figure>img{
+    border-radius: 50%;
+}
 }
