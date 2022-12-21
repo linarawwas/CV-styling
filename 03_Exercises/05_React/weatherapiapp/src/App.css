@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
+
+.page{
+  background-color: black;
+}
+.main{
+	font-family: "Raleway";
+  z-index: 1;
+  background-color: rgb(161, 208, 240);
+  width:70%;
+  margin-left: auto;
+  margin-right:auto;
+height:100rem;
+
+}
+.headerdiv{
+background-color: rgb(116, 151, 232);
+padding:1rem;
+font-size:2rem;
+color:white;
+padding-bottom:1.2rem;
+z-index:10;
+}
+.btn{
+  background-color: rgb(77, 89, 192);
+  border:0;
+  font-size: 1rem;
+  padding:1rem;
+  font-family: "Raleway";
+  z-index: 20;
+  margin-left: 3rem;
+}
+input{
+  background-color: rgb(116, 151, 232);
+  border:0;
+}
+form{
+  margin-top:1rem;
+  width:90%;
+  margin-left:3rem; 
+}
+.middlecolumn {
+  display:flex;
+  text-align: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right:auto;
+  padding-top:3rem;
+  color:rgb(5, 5, 110);
+}
+.middlecolumn img{
+  height:13rem; 
+}
+.thirdrow p, .fourthrow p {
+  display:block;
+  padding:0.5rem;
+}
+.thirdrow{
+display:flex;
+flex-direction: row;
+justify-content: center;
+font-size:1.5rem;
+
+}
+.fourthrow {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.dailyweather .firstrow, .dailyweather .temp, .dailyweather .picrow {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.dailyweather{
+  width:70%;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top:6rem;
+}
+
+.picrow img{
+  height:5rem;
+  width:5rem;
+}
+.strong{
+  font-weight: bold;
+}
+.strongwhite{
+  font-weight: bold;
+color:white;
+font-size: 1.5rem;
+padding:0;
+margin:0;
+}
+.fourthrow p {
+  font-size: 1rem;
+}
